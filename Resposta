@@ -1,0 +1,17 @@
+function processData(input) {
+
+  const palavra = input;
+  const letra = input [0];
+  const texto = palavra.substr(1);
+  const primeiraLetraMaiuscula = palavra[0].toUpperCase() + palavra.slice(1).toLowerCase();
+  const todasMaiusculas = palavra.toUpperCase();
+  const todasMinusculas = palavra.toLowerCase();
+  
+  if (input === todasMaiusculas) {
+   console.log(todasMinusculas);  
+  } else if ( letra === input [0].toLowerCase() && texto.toUpperCase() === texto ) {
+    console.log(primeiraLetraMaiuscula);
+  }else{
+      console.log(input);
+  }
+}
